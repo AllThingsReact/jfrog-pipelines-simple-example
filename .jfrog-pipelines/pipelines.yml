@@ -24,6 +24,9 @@ pipelines:
             - name: myFirstRepo
         execution:
           onExecute:
+            - ls -al
+            - cd..
+            - ls -al
             - printenv
   - name: pipeline_scheduled_triggers2
     steps:
